@@ -1,14 +1,6 @@
 import numpy as np
 
-#Process of buying: Each consumer has a consumption hierarchy and cash. It will look for
-#neighboring procuders of its most important needs and buy if it can afford it, at the cheapest price. Consumption hierarchy
-#is based on what they havent bought in the past few days.
-
-#Process of selling: Before each market opening, all producers have to select a price and an inventory size. Price is set
-#based on how much it costs to produce (whose evolution is set by the market), the personal production factor dependent
-# on the agent (set to be random), and the desired margin. This margin is set by the neighboring demand score (calculated
-#based on the consumption hierarchies of neighboring consumers) as well as neighboring competitor prices. The amount to produce
-#depends on the saving percentage, the remaining free inventory, anf the neighboring demand sscore.
+#This script contains the definition of the agent class, as well as all the functions concerning agent actions.
 
 class agent:
     """Class defining a consumer/producer. Inputs:
