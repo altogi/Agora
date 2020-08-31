@@ -4,6 +4,9 @@ from sklearn.neighbors import NearestNeighbors
 import matplotlib.pyplot as plt
 from agoraPlot import agoraPlot
 
+#This script contains the class defining the market environment, which itself invokes the agent class in order to simulate
+#the interaction of a number of agents in the physical market.
+
 # objects of market:
 # nbrs: NearestNeighbors object
 # positions: list of all agent positions
