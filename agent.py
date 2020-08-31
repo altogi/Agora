@@ -1,5 +1,9 @@
 import numpy as np
 
+#Here, the class defining the actions of a market agent is established. On the one hand, the agent is in charge of producing
+#a stock of products of its own production group, and generating some profit by selling such goods to its neighboring consumers.
+#On the other hand, the agent has also to buy products from neighboring producers, in order to fulfill inherent needs.
+
 #Process of buying: Each consumer has a consumption hierarchy and cash. It will look for
 #neighboring procuders of its most important needs and buy if it can afford it, at the cheapest price. Consumption hierarchy
 #is based on what they havent bought in the past few days.
