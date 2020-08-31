@@ -9,4 +9,4 @@ __Process of selling:__ Before each market opening, all producers have to select
 
 __Process of buying:__ Each consumer has a consumption hierarchy, showing its needs, and cash. It will look for neighboring procuders of its most important needs and buy if it can afford it, at the cheapest possible price. The consumption hierarchy of an agent is based on what it has not bought in the past few days.
 
-
+Within the project, _agent.py_ is the script containing the class regarding all market agents, _agora.py_ is the script with defining the class in charge of the market simulation, which generates a set of agents and simulates their interaction for a specified number of market days, and _agoraPlot.py_ contains a number of functions in charge of the visualization of relevant simulation parameters.
