@@ -1,18 +1,6 @@
 import numpy as np
 
-#Here, the class defining the actions of a market agent is established. On the one hand, the agent is in charge of producing
-#a stock of products of its own production group, and generating some profit by selling such goods to its neighboring consumers.
-#On the other hand, the agent has also to buy products from neighboring producers, in order to fulfill inherent needs.
-
-#Process of buying: Each consumer has a consumption hierarchy and cash. It will look for
-#neighboring procuders of its most important needs and buy if it can afford it, at the cheapest price. Consumption hierarchy
-#is based on what they havent bought in the past few days.
-
-#Process of selling: Before each market opening, all producers have to select a price and an inventory size. Price is set
-#based on how much it costs to produce (whose evolution is set by the market), the personal production factor dependent
-# on the agent (set to be random), and the desired margin. This margin is set by the neighboring demand score (calculated
-#based on the consumption hierarchies of neighboring consumers) as well as neighboring competitor prices. The amount to produce
-#depends on the saving percentage, the remaining free inventory, anf the neighboring demand sscore.
+#This script contains the definition of the agent class, as well as all the functions concerning agent actions.
 
 class agent:
     """Class defining a consumer/producer. Inputs:
