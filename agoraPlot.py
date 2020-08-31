@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import imageio
 
-#Here, plots regarding the simulation's evolution are presented.
+# Here, plots regarding the simulation's evolution are presented.
 
 class agoraPlot:
     def __init__(self, agora):
