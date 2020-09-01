@@ -35,8 +35,11 @@ class agora:
     rBuy: Base value for search radius for consumer inquiry
     eta_buy: Random fluctuation for rBuy, depending on the agent
     rSell: Base value for search radius for seller inquiry
-    eta_sell: Random fluctuation for rSell, depending on the agent"""
-    def __init__(self, population=500, size=10, Ng=5, prices=[10, 10, 10, 10, 10], eta_p=[0, 0, 0, 0, 0], prodCosts=[5, 5, 5, 5, 5], t_prod=[5, 5, 5, 5, 5], quantity=[50, 50, 50, 50, 50], cash=2000, eta_c=0, eta_prod=0.5, week=10, needs=[10, 10, 10, 10, 10], rBuy=1.5, eta_buy=0, rSell=1.5, eta_sell=0):
+    eta_sell: Random fluctuation for rSell, depending on the agent
+    """
+    def __init__(self, population=500, size=10, Ng=5, prices=[10, 10, 10, 10, 10], eta_p=[0, 0, 0, 0, 0], prodCosts=[5, 5, 5, 5, 5],
+                 t_prod=[5, 5, 5, 5, 5], quantity=[50, 50, 50, 50, 50], cash=2000, eta_c=0, eta_prod=0.5, week=10,
+                 needs=[10, 10, 10, 10, 10], rBuy=1.5, eta_buy=0, rSell=1.5, eta_sell=0):
         self.population = population
         self.size = size
         self.Ng = Ng
@@ -72,8 +75,8 @@ class agora:
             prod = np.random.uniform(-1, 1) * self.eta_prod
             rBuy = self.rBuy + np.random.uniform(-1, 1) * self.eta_buy
             rSell = self.rSell + np.random.uniform(-1, 1) * self.eta_sell
-            ag = agent(self, cash, price, quantity, position, group=group, prod=prod, rSell=rSell, rBuy=rBuy)
 
+            ag = agent(self, cash, price, quantity, position, group=group, prod=prod, rSell=rSell, rBuy=rBuy)
             self.agents.append(ag)
 
         self.positions = self.positions[1:, :]
